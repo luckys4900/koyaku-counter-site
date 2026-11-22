@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>handoff</title>
+<script>
+// 投稿作業用: 開いたページ（x.com）に、このサイトの assets/store にある画像だけを渡す。
+(async () => {
+  const name = new URLSearchParams(location.search).get('f') || '';
+  if (!/^[A-Za-z0-9_\/-]+\.png$/.test(name) || name.includes('..') || !window.opener) return;
+  const r = await fetch(name, { cache: 'no-store' });
+  if (!r.ok) return;
+  const buf = await r.arrayBuffer();
+  window.opener.postMessage({ handoff: name, buf }, 'https://x.com', [buf]);
+  setTimeout(() => window.close(), 500);
+})();
+</script>
