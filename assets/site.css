@@ -1,0 +1,18 @@
+body { font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; line-height: 1.7; color: #1a1a1a; background: #fff; }
+@media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #0e1116; } a { color: #ffb020; } }
+a { color: #b36b00; }
+h1 { font-size: 1.5rem; line-height: 1.4; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+.lead { font-size: 1.05rem; }
+.play { display: inline-block; margin: 8px 0 20px; padding: 14px 22px; border-radius: 12px; background: #1a1a1a; color: #fff; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+@media (prefers-color-scheme: dark) { .play { background: #ffb020; color: #111; } }
+.crumb { font-size: .9rem; margin: 0 0 12px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+caption { text-align: left; font-size: .85rem; padding-bottom: 6px; }
+th, td { border: 1px solid #c8c8c8; padding: 6px 10px; text-align: right; white-space: nowrap; }
+thead th, tbody th { background: #f2f2f2; text-align: center; }
+@media (prefers-color-scheme: dark) { th, td { border-color: #3a4048; } thead th, tbody th { background: #1a2029; } }
+.note { font-size: .9rem; opacity: .85; }
+.disclaimer { font-size: .85rem; border-top: 1px solid #c8c8c8; margin-top: 2rem; padding-top: 12px; }
+ul.machines { padding-left: 1.2rem; }
